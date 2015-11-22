@@ -55,9 +55,17 @@ body {
     margin-left: 1em !important;
 }
 
+.navbar {
+    height: 50px;
+}
+
 @media(max-width:767px) {
     .navbar {
-        height: 50px !important;
+        max-height: 40px !important;
+    }
+
+    .navbar-nav {
+        margin: 0;
     }
 
     li.menu-btn {
@@ -79,16 +87,23 @@ body {
     }
 
     p {
-        font-size: 1.125em !important;
+        font-size: 1.1em !important;
     }
 
-    .screenshot {
-        width: 80%;
+    .screenshot, .description {
+        width: 90% !important;
+        margin-left: 5%;
+        height: auto;
+    }
+
+    img.screenshot {
+        width: 90%;
+        height: auto !important;
     }
 
     .description {
-        float: right;
-        width: 80%;
+        float: none !important;
+        margin-top: 20px;
     }
 }
 
@@ -99,12 +114,8 @@ body {
 }
 
 section #about, #multimedia, #writing, #video, #audio, #projects, #presentations {
-    margin-top: 100px;
-    padding-top: 100px;
-}
-
-section #about, #multimedia, #writing, #video, #audio, #projects, #presentations h3 {
-    padding-top: 100px 0 !important;
+    margin-top: 50px;
+    padding-top: 75px;
 }
 
 h1, h2, h3 {
@@ -179,7 +190,7 @@ a img:hover {
     font-weight: 700;
 }
 
-.description h4 a, p a {
+.description h4 a, p a, ul li a {
     font-weight: 700;
     color: #30B1B1;
 }
@@ -189,7 +200,7 @@ a img:hover {
     color: #30B1B1;
 }
 
-.description h4 a, p a:hover, ul.portfolio-list li a:hover {
+.description h4 a, p a:hover, ul.portfolio-list li a:hover, ul li a:hover {
     color: #2B9F9F;
 }
 
