@@ -60,7 +60,7 @@ body {
 }
 
 .navbar-default {
-    background-color: #f1f1f1;
+    background-color: red;
 }
 
 @media(max-width:767px) {
