@@ -86,6 +86,13 @@ hr {
 
 /* BODY */
 
+.box {
+	width: 100%;
+	height: auto;
+    left: 0;
+    top: 0;
+}
+
 .body-text {
 	width: 45%;
 	max-width: 630px;
