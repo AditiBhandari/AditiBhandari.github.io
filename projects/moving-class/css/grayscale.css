@@ -58,6 +58,18 @@ a:focus {
     color: #4c7b39;
 }
 
+.data {
+    width: 20%;
+    float: left;
+    display: inline-block;
+    margin-right: 5%;
+    height: auto;
+}
+
+#no-margin {
+    margin-right: 0px;
+}
+
 .light {
     font-weight: 400;
 }
