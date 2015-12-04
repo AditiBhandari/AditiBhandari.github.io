@@ -86,13 +86,6 @@ hr {
 
 /* BODY */
 
-.box {
-	width: 100%;
-	height: auto;
-    left: 0;
-    top: 0;
-}
-
 .body-text {
 	width: 45%;
 	max-width: 630px;
@@ -103,13 +96,25 @@ hr {
 }
 
 #transcript {
-	width: 80%;
-	margin-left: 10%;
 	font-family: "Roboto", sans-serif;
 	font-size: 0.9em;
 	line-height: 1.1em;
-	color: #aaa;
+	color: #333;
 	display: none;
+}
+
+.button {
+	height: 2em;
+	font-size: 1em;
+	font-family: "Roboto", sans-serif;
+	border-radius: 5px;
+	background-color: #fff;
+	color: #ee3600;
+}
+
+.button:hover {
+	cursor: pointer;
+	text-decoration: underline;
 }
 
 .center {
@@ -128,10 +133,28 @@ hr {
 
 a {
 	text-decoration: none;
+	color: #ee3600;
+	font-weight: 700;
 }
 
 a:hover{
 	text-decoration: underline;
+}
+
+img.orange {
+	width: 3em;
+	height: auto;
+	opacity: 0.4;
+	z-index: 1 !important;
+}
+
+.orange2 {
+
+	margin-bottom: -1em;
+	width: 3em;
+	height: auto;
+	opacity: 0.4;
+	z-index: 1 !important;
 }
 
 /* IMAGES */
@@ -164,24 +187,72 @@ figure {
 	margin-bottom: 3em;
 }
 
+/* AUDIO */
+
+.box {
+	background:  -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 20%,rgba(0,0,0,0.8) 100%), url('img/wildtalks.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: auto;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    display: block;
+}
+
+.audio-player {
+	margin-left: 60%;
+	padding-top: 25%;
+	padding-bottom: 25%;
+	height: 100%;
+	z-index: 100;
+}
+
+.audio-text {
+	width: 400px;
+	margin-left: -50px;
+	color: #fff;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 1.1em;
+	line-height: 1.5em;
+}
+
+p.audio-text {
+	text-shadow: 1px 1px #000;
+}
+
+h4.audio-text {
+	font-family: "Georgia", serif;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+hr.audio-text {
+	margin-bottom: 0;
+}
+
 /* QUOTES */
 
 .quote {
 	display: block;
 	width: 300px;
 	color: #555555;
-	font-size: 1.25em;
-	font-weight: 300;					/* NEW */
+	font-size: 1em;
+	font-weight: 600;					/* NEW */
 	line-height: 1.5em;
 	display: block;
 	font-family: "Roboto", sans-serif;					/* NEW */
 	margin-bottom: 40px;
 	margin-top: 40px;
+	z-index: 6;
 }
 
 .right{
 	float: right;
-	margin-right: 20%;
+	margin-right: 10%;
 	margin-left: 2em;
 	padding-left: 2em;
 	border-left: 2px solid #ff3a00;
@@ -194,7 +265,7 @@ figure {
 	float: left;
 	text-align: right;
 	margin-right: 2em;
-	margin-left: 20%;
+	margin-left: 10%;
 	padding-right: 2em;
 	border-right: 2px solid #ff3a00;
 	border-top: none;
@@ -239,14 +310,14 @@ footer p a {
 		width: 100%;
 	}
 
-	h1{
+	h1 {
 		width: 80% auto 0 auto;					/* NEW */
 		font-size: 3em;
 		color: #000000;					/* NEW */
 		margin-top: 10px;					/* NEW */
 	}
 
-	h2{
+	h2 {
 		width: 85%;
 		margin-left: auto;
 		margin-right: auto;
@@ -268,9 +339,133 @@ footer p a {
 		width: 100%;
 	}
 
+	footer {
+		height: 0.25em;
+		background-color: #ff3a00; /* this is NBN purple */
+		display: block;
+		margin: 0 auto;
+	}
+
+	footer p {
+		width: 80%;				/* ALL THE FOLLOWING IS NEW */
+	}
+}
+
+@media screen and (min-width: 600px) {
+	#hed-dek {
+		width: 90%;
+	}
+
+	.body-text {
+		width: 70%;
+	}
+
+	h1 {
+		width: 85% auto 0 auto;
+		font-size: 2.75em;
+		color: #ffffff;
+		margin-top: -140px;					/* NEW */
+		text-shadow: 2px 2px #000000;
+	}
+
+	h2 {
+		width: 85%;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 1.2em;
+		margin-top: 40px;
+		font-weight: 400;
+		margin-top: 120px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.audio-player {
+		margin-left: 55%;
+		padding-top: 20%;
+		padding-bottom: 20%;
+	}
+
+	audio {
+		margin-left: -50px;
+	}
+
+	.audio-text {
+		width: 350px;
+	}
+
+	.quote {
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.audio-player {
+		margin-left: 55%;
+		padding-top: 15%;
+		padding-bottom: 15%;
+	}
+
+	audio {
+		margin-left: -50px;
+	}
+
+	.audio-text {
+		width: 300px;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	.audio-player {
+		margin-left: 55%;
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+
+	audio {
+		margin-left: -50px;
+		width: 200px;
+	}
+
+	.audio-text {
+		width: 250px;
+	}
+
+	.quote {
+		width: 150px;
+	}
+
+	.left {
+		margin-left: 5%;
+	}
+
+	.right {
+		margin-right: 5%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.audio-player {
+		padding-top: 2.5%;
+		padding-bottom: 2.5%;
+	}
+
+	audio {
+		margin-left: -40px;
+		width: 200px;
+	}
+
+	.audio-text {
+		margin-left: -40px;
+		width: 200px;
+		font-size: 1em;
+		line-height: 1.25em;
+	}
+
+
 	.quote {
 		display: block;
-		width: 50%;
+		width: 70%;
 		color: #555555;
 		font-size: 1em;
 		line-height: 1.5em;
@@ -286,6 +481,7 @@ footer p a {
 		padding-right: 1.3em;
 		margin-left: 1em;
 		margin-top: 1em;
+		margin-right: 2.5em;
 		display: block;
 	}
 
@@ -297,50 +493,10 @@ footer p a {
 		border-left: none;
 		padding-left: 1.3em;
 		margin-top: 1em;
-	}
-
-	footer {
-		padding-right: 0.5em;
-		height: 5em;
-		background-color: #ff3a00; /* this is NBN purple */
-		display: block;
-		margin: 0 auto;
-		padding-top: 1em;
-		padding-bottom: 1em;
-	}
-
-	footer p {
-		width: 80%;				/* ALL THE FOLLOWING IS NEW */
+		margin-left: 2.75em;
 	}
 }
 
-@media screen and (min-width: 600px) {
-	#hed-dek{
-		width: 90%;
-	}
-
-	.body-text {
-		width: 70%;
-	}
-
-	h1 {
-		width: 85% auto 0 auto;
-		font-size: 3em;
-		color: #ffffff;
-		margin-top: -120px;					/* NEW */
-		text-shadow: 2px 2px #000000;
-	}
-
-	h2 {
-		width: 85%;
-		margin-left: auto;
-		margin-right: auto;
-		font-size: 1.2em;
-		margin-top: 40px;
-		font-weight: 400;
-		margin-top: 70px;
-	}
-}
 
 @media screen and (min-width: 1024px) {
 	h1 {
