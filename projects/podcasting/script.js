@@ -4,4 +4,10 @@ $(document).ready(function(){
 	    // Animation complete.
 	  });
 	});
+
+	$( "#flowchart-btn" ).click(function() {
+	  $( "#flowchart" ).toggle( "fast", function() {
+	    // Animation complete.
+	  });
+	});
 });

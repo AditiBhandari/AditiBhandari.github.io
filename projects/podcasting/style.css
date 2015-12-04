@@ -6,7 +6,7 @@ body {
 /* PURPLE BAR, LOGO, COVER PHOTO */
 
 header, footer {
-	height: 0.25em;
+	padding-top: 0.25em;
 	background-color: #ff3a00; /* this is NBN purple */
 	display: block;
 	margin: 0 auto;
@@ -166,8 +166,8 @@ img.orange {
 }
 
 .inline-img-lg {
-	width: 65%;
-	max-width: 850px;
+	width: 80%;
+	max-width: 900px;
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
@@ -185,6 +185,10 @@ figcaption {
 figure {
 	margin-top: 3em;
 	margin-bottom: 3em;
+}
+
+#flowchart {
+	display: none;
 }
 
 /* AUDIO */
@@ -276,24 +280,22 @@ hr.audio-text {
 /* FOOTER BAR, FOOTER TEXT */
 
 /*footer {
-	padding-right: 0.5em;
-	height: 5em;
-	background-color: #ff3a00;  this is NBN purple 
+	padding-top: 0.25em;
+	height: 100%;
 	display: block;
 	margin: 0 auto;
-	padding-top: 1em;
-	padding-bottom: 1em;
-}
-*/
+	background-color: #ff3a00;
+}*/
+
 footer p {
 	color: #ffffff;
 	width: 45%;
 	max-width: 630px;
 	margin: .75em auto .75em auto;
-	font-size: 0.9em;
+	font-size: 0.8em;
 	font-family: "Roboto", sans-serif;					/* NEW */
-	font-weight: 400;					/* NEW */
-	line-height: 0.9em;
+	font-weight: 300;					/* NEW */
+	line-height: 1.25em;
 } 
 
 footer p strong {
@@ -332,7 +334,6 @@ footer p a {
 
 	.inline-img, .inline-img-lg {
 		width: 125%;
-		margin-left: -12.5%;
 	}
 
 	figcaption.center {
@@ -442,6 +443,10 @@ footer p a {
 	.right {
 		margin-right: 5%;
 	}
+
+	.inline-img, .inline-img-lg {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 500px) {
@@ -453,6 +458,11 @@ footer p a {
 	audio {
 		margin-left: -40px;
 		width: 200px;
+	}
+
+	.inline-img, .inline-img-lg {
+		width: 100%;
+
 	}
 
 	.audio-text {
