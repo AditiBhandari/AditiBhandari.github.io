@@ -1,0 +1,50 @@
+html {
+	width: 100vw;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-family: "Roboto";
+	font-size: 1em;
+	background-color: #eee;
+}
+
+.wrapper {
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 25px;
+}
+
+h3 {
+	font-weight: 400;
+}
+
+.purp {
+	color: purple;
+	font-weight: 700;
+}
+
+#Captions {
+	font-size: 2em;
+	font-weight: 700;
+}
+
+button {
+	padding: 25px;
+	border-radius: 5px;
+	font-size: 1em;
+	color: purple;
+	background-color: #ddd;
+	font-weight: 700;
+	margin-top: 30px;
+	margin-left: 25%;
+}
+
+button:hover{
+	font-weight: 700;
+	color: #ddd;
+	background-color: purple;
+}
+
+button:active{
+	background-color: white;
+	color: purple;
+}

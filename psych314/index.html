@@ -1,0 +1,54 @@
+<html>
+<head>
+  <title>HW8 | Psych 314</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>  <link rel="stylesheet" type="text/css" href="styles.css">
+<script type="text/javascript">
+// For: http://www.webdeveloper.com/forum/showthread.php?t=238170
+
+var imgLinks = [
+// format: ['imageSource','imageLinkURL'],
+  ['http://www.91x.com/wp-content/uploads/2015/10/Pepperoni-pizza-3.jpg','eat 4276 Dominos Large Pepperoni Pizzas'],
+  ['http://ecx.images-amazon.com/images/I/71-MSZtk3nL._SX450_.jpg','buy 213 Beats Solo2 Wireless Headphones'],
+  ['https://www.washingtonpost.com/blogs/local/files/2014/10/4-kittens1.jpg','adopt 426 kittens at AdoptAPet.com'],
+  ['http://www.nova.edu/hpd/otm/pics/4fun/14.jpg','http://www.bing.com'],
+  ['http://www.nova.edu/hpd/otm/pics/4fun/15.jpg','http://www.codingforums.com'],
+  ['http://www.nova.edu/hpd/otm/pics/4fun/21.jpg','http://www.dreamincode.net']	// NOTE: no comma after last entry
+];
+
+function SetImage(IDS,imgPtr) {
+  imgPtr = parseInt(imgPtr);
+  document.getElementById(IDS).src = imgLinks[imgPtr][0];
+  document.getElementById(IDS).alt = imgLinks[imgPtr][1];
+  document.getElementById('Captions').innerHTML = imgLinks[imgPtr][1];
+}
+
+function RandomLink() {
+  var R = Math.random() * imgLinks.length;
+  SetImage('Pics',R);
+}
+
+function GoToURL(URL) { document.location.href = URL; }
+
+onload = function () { RandomLink(); }
+
+</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+  <h3>The cost of tuition, room and fees at Northwestern for the 2015-2016 school year is <span class="purp">$64,018</span>.</h3>
+  <h3>With that kind of money, you could*...</h3>
+  <br>
+  <p id="Captions"></p>
+
+  <img id="Pics" height="425" width="600" src="" alt="" onclick="GoToURL(this.alt)"><br>
+    <button onclick="RandomLink()">Really?! What else?</button>
+
+  <p><em>* figures rounded down to nearest whole number</em></p>
+</div>
+
+
+</body>
+
+</html>
