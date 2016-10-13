@@ -1,0 +1,65 @@
+{
+	"stories": [
+		{
+			"url": 		"index.html",
+			"headline": "",
+			"deck": 	"",
+			"byline": 	"",
+			"large": 	"true",
+			"main": 	"true",
+			"background": {			
+				"url": 	"img/teaser/flux.png"
+			}
+		},
+		{
+			"url": 		"stories/urban_tribe/",
+			"headline": "Assembling an Urban Tribe",
+			"deck": 	"Chicago's American Indians are working to piece together a new native community",
+			"byline": 	"",
+			"large": 	"true",
+			"background": {			
+				"url": 	"img/teaser/new_lost_tribe.jpg"
+			}
+		},
+		{
+			"url": 		"stories/stacked_potential/",
+			"headline": "Stacked Potential",
+			"deck": 	"The quest for a smart pill is riddled with murky laws, lofty promises and unknown consequences.",
+			"byline": 	"",
+			"large": 	"true",
+			"background": {			
+				"url": 	"img/teaser/stacked_potential.jpg"
+			}
+		},
+		{
+			"url": 		"stories/poz_perception/",
+			"headline": "The Poz Perception",
+			"deck": 	"HIV rates are climbing, but the perception of the once life-ending disease has changed.",
+			"byline": 	"",
+			"large": 	"true",
+			"background": {			
+				"url": 	"img/teaser/poz_perception.png"
+			}
+		},
+		{
+			"url": 		"stories/fight_to_work/",
+			"headline": "Fight to Work",
+			"deck": 	"The faces of Illinois labor —policymakers, activists and union workers— show the true stakes of the debate over right-to-work laws.",
+			"byline": 	"",
+			"large": 	"true",
+			"background": {			
+				"url": 	"img/teaser/evolution_of_labor.png"
+			}
+		},
+		{
+			"url": 		"stories/finding_closure/",
+			"headline": "Finding Closure",
+			"deck": 	"Still reeling from the foreclosure crisis, immigrants on Chicago’s Northwest Side are fighting to take housing policy into their own hands.",
+			"byline": 	"",
+			"large": 	"true",
+			"background": {			
+				"url": 	"img/teaser/finding_closure.jpg"
+			}
+		}
+	]
+}
