@@ -9,7 +9,7 @@
 <body class="container">
 
 	<header>
-		<nav class="menu">
+		<nav class="menu" role="navigation">
 			<a class="menu_home_link" href="index.html"><h1 class="menu_home_button">Aditi Bhandari</h1></a>
 			<ul class="menu_list">
 				<li class="menu_button"><a class="menu_link" href="work.html">work</a></li>
@@ -19,7 +19,7 @@
 		</nav>
 	</header>
 
-	<main>
+	<main role="main">
 		<section class="intro">
 			<p class="intro_text">I'm Aditi Bhandari and I'm a senior at Northwestern University studying journalism and design. I'm currently the data visuals fellow at <a class="intro_link" href="https://www.texastribune.org/about/staff/aditi-bhandari/" target="_blank">The Texas Tribune,</a> and previously worked at the <a class="intro_link" href="http://slides.com/dittybhandari/spotlight" target="_blank">The Boston Globe</a> and the <a class="intro_link" href="https://knightlab.northwestern.edu/" target="_blank">Knight Lab.</a></p>
 		</section>
@@ -32,7 +32,7 @@
 			
 			<section class="section_samples">
 
-				<article class="sample sample_1">
+				<article role="article" class="sample sample_1">
 					<a class="sample_link" href="https://www.texastribune.org/2017/03/01/heres-how-much-texas-candidates-spent-vote-general-election/" target="_blank">
 						<h3 class="sample_title">Campaign Finances</h3>
 						<img class="sample_image" src="img/campaignfinance.png" alt="campaign finance project screenshot">
@@ -43,7 +43,7 @@
 					</section>
 				</article>
 
-				<article class="sample sample_2">
+				<article role="article" class="sample sample_2">
 					<a class="sample_link" href="https://www.texastribune.org/2017/02/21/texas-school-districts-struggle-bilingual-certified-teachers/" target="_blank">
 						<h3 class="sample_title">Texas Students</h3>
 						<img class="sample_image" src="img/texasstudents.png" alt="texas student demographics project screenshot">
@@ -54,7 +54,7 @@
 					</section>
 				</article>
 				
-				<article class="sample sample_3">
+				<article role="article" class="sample sample_3">
 					<a class="sample_link" href="https://www.bostonglobe.com/metro/2016/08/22/tornado-warning-issued-for-parts-middlesex-county/34Ryiiyh5vVlpkn2pzWvSI/story.html" target="_blank">
 						<h3 class="sample_title">Tornados/hour</h3>
 						<img class="sample_image" src="img/tornadoes.png" alt="tornadoes project screenshot">
@@ -65,7 +65,7 @@
 					</section>
 				</article>
 
-				<article class="sample sample_4 hidden">
+				<article role="article" class="sample sample_4 hidden">
 					<a class="sample_link" href="https://apps.bostonglobe.com/spotlight/the-desperate-and-the-dead/series/community-care/" target="_blank">
 						<h3 class="sample_title">Community Care</h3>
 						<img class="sample_image" src="img/communitycare.png" alt="community care project screenshot">
@@ -89,7 +89,7 @@
 			
 			<section class="section_samples">
 
-				<article class="sample sample_1">
+				<article role="article" class="sample sample_1">
 					<a class="sample_link" href="https://aditibhandari.github.io/nicar17-slides/" target="_blank">
 						<h3 class="sample_title">Self-care for Nerds</h3>
 						<img class="sample_image" src="img/selfcare.png" alt="">
@@ -100,28 +100,17 @@
 					</section>
 				</article>
 				
-				<article class="sample sample_2">
-					<a class="sample_link" href="https://learn.knightlab.com/" target="_blank">
-						<h3 class="sample_title">Learn.KnightLab</h3>
-						<img class="sample_image" src="img/knightlab.png" alt="learn dot knight lab project screenshot">
+				<article role="article" class="sample sample_2">
+					<a class="sample_link" href="http://slides.com/dittybhandari/deck-18/fullscreen#/" target="_blank">
+						<h3 class="sample_title">GIF-Making 101</h3>
+						<img class="sample_image" src="img/gif-making101.png" alt="">
 					</a>
 					<section class="sample_desc">
-						<p class="sample_text">Wrote and designed lessons for Learn.KnightLab, a "by students, for students" project-based coding tutorial.</p>
+						<p class="sample_text">It's no secret that I love GIFs. I led a workshop at the Knight Lab to teach students how to make GIFs using Giphy Capture and Photoshop.</p>
 					</section>
 				</article>
 				
-				<article class="sample sample_3">
-					<a class="sample_link" href="https://aditibhandari.github.io/psych-314/" target="_blank">
-						<h3 class="sample_title">What Would You Buy?</h3>
-						<img class="sample_image" src="img/psych314.png" alt="what would you buy project screenshot">
-					</a>
-					<section class="sample_desc">
-						<p class="sample_text">Found a few ways I could have spent my tuition money for my data viz class.</p>
-						<p class="sample_skills">HTML, CSS, JavaScript</p>
-					</section>
-				</article>
-
-				<article class="sample sample_4 hidden">
+				<article role="article" class="sample sample_3">
 					<a class="sample_link" href="https://aditibhandari.github.io/dsgn-375/" target="_blank">
 						<h3 class="sample_title">Moving Class</h3>
 						<img class="sample_image" src="img/movingclass.jpeg" alt="moving class project screenshot">
@@ -131,12 +120,22 @@
 					</section>
 				</article>
 
+				<article role="article" class="sample sample_4 hidden">
+					<a class="sample_link" href="http://slides.com/dittybhandari/sublime-hacks/fullscreen#/" target="_blank">
+						<h3 class="sample_title">Sublime Text</h3>
+						<img class="sample_image" src="img/sublimehacks.png" alt="">
+					</a>
+					<section class="sample_desc">
+						<p class="sample_text">I've been using Sublime Text for about a year now. Here's some tricks and tricks I've accumulated over time to make my coding more efficient (and hopefully yours too).</p>
+					</section>
+				</article>
+
 			</section>
 		</section>
 
 	</main>
 
-	<footer class="footer">
+	<footer class="footer" role="contentinfo">
 		<p class="footer_text">Designed and developed by Aditi Bhandari</p>
 	</footer>
 

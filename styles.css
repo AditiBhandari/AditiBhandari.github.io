@@ -14,7 +14,7 @@ html, body {
 	font-size: 1em;
 	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
-	color: #333;
+	color: #191919;
 }
 
 /* HEADER */
@@ -43,13 +43,13 @@ html, body {
 
 .menu_home_link {
 	font-size: 1.75em;
-	color: #333;
+	color: #191919;
 	transition: color ease-in-out 0.1s;
 }
 
 .menu_link {
 	font-size: 1.2em;
-	color: #aaa;
+	color: #888;
 }
 
 .menu_link, .menu_home_link {
@@ -61,16 +61,16 @@ html, body {
 }
 
 .menu_link_active {
-	color: #333;
-	border-bottom: solid 4px #2B9F9F;
+	color: #191919;
+	border-bottom: solid 4px #227f7f;
 }
 
 .menu_home_link:hover {
-	color: #2B9F9F;
+	color: #227f7f;
 }
 
 .menu_link:hover {
-	border-bottom: solid 4px #2B9F9F;
+	border-bottom: solid 4px #227f7f;
 	transition: border-bottom ease-in-out 0.1s;
 }
 
@@ -89,16 +89,16 @@ html, body {
 }
 
 .intro_link {
-	color: #333;
-	border-bottom: solid 2px #2B9F9F;
-	transition: color ease-in-out 0.1s;
+	color: #191919;
+	border-bottom: solid 2px #227f7f;
+	transition: border-bottom ease-in-out 0.1s;
 	text-decoration: none;
 	font-weight: 700;
 	margin: 0;
 }
 
 .intro_link:hover {
-	color: #2B9F9F;
+	border-bottom: solid 4px #227f7f;
 }
 
 /* SECTIONS */
@@ -118,10 +118,12 @@ html, body {
 
 .section_more_link {
 	display: inline-block;
+	padding-bottom: 3px;
 	font-size: 0.9em;
-	color: #aaa;
+	color: #888;
 	text-decoration: none;
-	transition: color ease-in-out 0.1s;
+	border-bottom: solid 2px #fff;
+	transition: border-bottom ease-in-out 0.1s;
 }
 
 .section_more_link:after {
@@ -130,7 +132,7 @@ html, body {
 }
 
 .section_more_link:hover {
-	color: #2B9F9F;
+	border-bottom: solid 2px #227f7f;
 }
 
 .section_samples {
@@ -165,11 +167,11 @@ html, body {
 
 .sample_link {
 	text-decoration: none;
-	color: #333;
+	color: #191919;
 }
 
 .sample_link:hover .sample_title {
-	color: #2B9F9F;
+	color: #227f7f;
 }
 
 .sample_link:hover .sample_image {
@@ -184,7 +186,7 @@ html, body {
 	font-weight: 700;
 	font-size: 0.9em;
 	transition: color ease-in-out 0.1s;
-	color: #aaa;
+	color: #888;
 }
 
 figure {
@@ -217,18 +219,18 @@ figure {
 	font-weight: 700;
 	color: inherit;
 	text-decoration: none;
-	border-bottom: solid 2px #2B9F9F;
-	transition: color ease-in-out 0.1s;
+	border-bottom: solid 2px #227f7f;
+	transition: border-bottom ease-in-out 0.1s;
 }
 
 .sample_text_link:hover {
-	color: #2B9F9F;
+	border-bottom: solid 4px #227f7f;
 }
 
 .sample_skills {
 	font-size: 0.8em;
 	margin: 3px 0 0 0;
-	color: #aaa;
+	color: #888;
 	font-weight: 400;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -243,13 +245,13 @@ figure {
     margin: 0em 0.5em 1em 0.5em;
     padding-bottom: 0.5em;
     display: inline-block;
-    border-bottom: 2px solid #fbfbfb;
+    border-bottom: 2px solid #fff;
     max-width: 100%;
     opacity: 0.8;
 }
 
 .logo:hover {
-    border-bottom: 2px solid #30B1B1;
+    border-bottom: 2px solid #227f7f;
     max-width: 100%;
     opacity: 1;
 }
@@ -270,7 +272,7 @@ figure {
 .footer_text {
 	text-align: center;
 	font-size: 0.8em;
-	color: #aaa;
+	color: #888;
 }
 
 /* MEDIA QUERIES */
