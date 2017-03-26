@@ -170,8 +170,8 @@ html, body {
 	color: #191919;
 }
 
-.sample_link:hover .sample_title {
-	color: #227f7f;
+.sample_link:hover .sample_title_border {
+	border-bottom: solid 4px #227f7f;
 }
 
 .sample_link:hover .sample_image {
@@ -185,8 +185,12 @@ html, body {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 0.9em;
-	transition: color ease-in-out 0.1s;
 	color: #888;
+}
+
+.sample_title_border {
+	border-bottom: solid 4px #fff;
+	transition: border-bottom ease-in-out 0.1s;
 }
 
 figure {
