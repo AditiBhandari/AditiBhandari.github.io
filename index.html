@@ -1,413 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Aditi Bhandari</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+	<meta charset="UTF-8">
+	<title>Aditi Bhandari</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Biryani:200,700|Open+Sans:400,700" rel="stylesheet">
 </head>
+<body class="container">
 
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+	<header>
+		<nav class="menu">
+			<a class="menu_home_link" href="index.html"><h1 class="menu_home_button">Aditi Bhandari</h1></a>
+			<ul class="menu_list">
+				<li class="menu_button"><a class="menu_link" href="work.html">work</a></li>
+				<li class="menu_button"><a class="menu_link" href="projects.html">projects</a></li>
+				<li class="menu_button"><a class="menu_link" href="about.html">about</a></li>
+			</ul>
+		</nav>
+	</header>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	<main>
+		<section class="intro">
+			<p class="intro_text">I'm Aditi Bhandari and I'm a senior at Northwestern University studying journalism and design. I'm currently the data visuals fellow at <a class="intro_link" href="https://www.texastribune.org/about/staff/aditi-bhandari/" target="_blank">The Texas Tribune,</a> and previously worked at the <a class="intro_link" href="http://slides.com/dittybhandari/spotlight" target="_blank">The Boston Globe</a> and the <a class="intro_link" href="https://knightlab.northwestern.edu/" target="_blank">Knight Lab.</a></p>
+		</section>
+		
+		<section name="selected_work">
+			<span class="section_meta">
+				<h2 class="section_heading">Here's my work.</h2>
+				<a href="work.html" class="section_more_link">but wait, there's more</a>
+			</span>
+			
+			<section class="section_samples">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
+				<article class="sample sample_1">
+					<a class="sample_link" href="https://www.texastribune.org/2017/03/01/heres-how-much-texas-candidates-spent-vote-general-election/" target="_blank">
+						<h3 class="sample_title">Campaign Finances</h3>
+						<img class="sample_image" src="img/campaignfinance.png" alt="campaign finance project screenshot">
+					</a>
+					<section class="sample_desc">
+						<p class="sample_text">Learned and used PostgreSQL to create a database of Texas politicians’ campaign finances. Cleaned and fact-checked the database in Microsoft Excel and Google Spreadsheet to verify calculations.</p>
+						<p class="sample_skills">PostgreSQL, Excel, Google Sheets</p>
+					</section>
+				</article>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="menu-btn">
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    
-                    <li role="presentation" class="dropdown menu-btn">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Work<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-btn"><a class="page-scroll" href="#code">Code and Design</a></li>
-                            <li class="dropdown-btn"><a class="page-scroll" href="#writing">Writing</a></li>
-                            <li class="dropdown-btn"><a class="page-scroll" href="#video">Video</a></li>
-                            <li class="dropdown-btn"><a class="page-scroll" href="#audio">Audio</a></li>
-                            <li class="dropdown-btn"><a class="page-scroll" href="#projects">Projects</a></li>
-                            <li class="dropdown-btn"><a class="page-scroll" href="#talks">Talks</a></li>
-                        </ul>
-                    </li>
+				<article class="sample sample_2">
+					<a class="sample_link" href="https://www.texastribune.org/2017/02/21/texas-school-districts-struggle-bilingual-certified-teachers/" target="_blank">
+						<h3 class="sample_title">Texas Students</h3>
+						<img class="sample_image" src="img/texasstudents.png" alt="texas student demographics project screenshot">
+					</a>
+					<section class="sample_desc">
+						<p class="sample_text">Pulled Texas public education data from the Tribune's Django database and compared student and teacher demographics.</p>
+						<p class="sample_skills">Google Spreadsheets, HTML, CSS/Sass, Django</p>
+					</section>
+				</article>
+				
+				<article class="sample sample_3">
+					<a class="sample_link" href="https://www.bostonglobe.com/metro/2016/07/25/mattapan-transportation-island-can-fixed/TbVKEONzFvDxroVe21iC8K/story.html" target="_blank">
+						<h3 class="sample_title">Tornados/hour</h3>
+						<img class="sample_image" src="img/tornadoes.png" alt="tornadoes project screenshot">
+					</a>
+					<section class="sample_desc">
+						<p class="sample_text">Found and cleaned a 60,000+ row dataset for a breaking news story. Created print and web versions of the chart.</p>
+						<p class="sample_skills">Excel, CSS/Stylus, D3.js, Illustrator</p>
+					</section>
+				</article>
 
-                    <li class="menu-btn">
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
+				<article class="sample sample_4 hidden">
+					<a class="sample_link" href="https://apps.bostonglobe.com/spotlight/the-desperate-and-the-dead/series/community-care/" target="_blank">
+						<h3 class="sample_title">Community Care</h3>
+						<img class="sample_image" src="img/communitycare.png" alt="community care project screenshot">
+					</a>
+					<section class="sample_desc">
+						<p class="sample_text">Cleaned and processed the data in Excel, and created both graphs in Illustrator. Adjusted designs for desktop screens, mobile screens and social media. Turned a graph into a looping GIF.</p>
+						<p class="sample_skills">Excel, Illustrator, Photoshop</p>
+					</section>
+				</article>
 
-                    <li class="menu-btn">
-                        <a href="resume.pdf" target="_blank">R&#233;sum&#233;</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+			</section>
+		</section>
 
-    <!-- About Section -->
-    <section id="about" class="section-part">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Hello!</h1>
-                    <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-                        <p>I'm Aditi Bhandari and I'm a senior at Northwestern University studying journalism and design. I'm currently the data visuals fellow at <a href="https://www.texastribune.org/" target="_blank">The Texas Tribune</a> and was the design/development intern last summer at the <a href="http://www.bostonglobe.com/" target="_blank">The Boston Globe</a>.</p>
-                        <p>I like to produce multimedia stories, but code and UI/UX design is what I'm most excited about. If you like creative storytelling, homemade chai or critically consuming pop culture, we should probably be friends.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- SELECTED PROJECTS -->
 
-    <section class="work-section" id="code">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-                    <h2>Work</h2>
-                    <h3>Code and Design</h3>
+		<section name="selected_projects">
+			<span class="section_meta">
+				<h2 class="section_heading">Here are my projects.</h2>
+				<a href="projects.html" class="section_more_link">but wait, there's more</a>
+			</span>
+			
+			<section class="section_samples">
 
-                    <div class="portfolio-item">
-                        <a href="http://slides.com/dittybhandari/spotlight/fullscreen" target="_blank"><img class="screenshot" src="img/globe.png"></a>
-                        <div class="description">
-                            <h4>The Boston Globe</h4>
-                            <p>Last summer, I interned at The Boston Globe on their design and development desk and got to work on graphics for several data-driven stories. Here's a "Spotlight" on some of the work I did there.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="portfolio-item">
-                        <a href="http://apps.northbynorthwestern.com/magazine/2015/fall/index/" target="_blank"><img class="screenshot" src="img/nbn-mag.png"></a>
-                        <div class="description">
-                            <h4>North By Northwestern Fall 2015 Magazine</h4>
-                            <p>As the Digital Product Manager for the North By Northwestern quarterly print magazine, I worked with a team of designers to adapt the print magazine for an online audience. I designed, and created web-exclusive content for, stories about:</p>
-                            <ul>
-                                <li><a href="http://apps.northbynorthwestern.com/magazine/2015/fall/out-of-the-dungeon/" target="_blank">Kink education on campus</a></li>
-                                <li><a href="http://apps.northbynorthwestern.com/magazine/2015/fall/science-in-the-sky/" target="_blank">Zero-gravity science experiments</a></li>
-                                <li><a href="http://apps.northbynorthwestern.com/magazine/2015/fall/beyond-the-binary/" target="_blank">LGBTQ+ students in Greek life</a></li>
-                                <li><a href="http://apps.northbynorthwestern.com/magazine/2015/fall/undocumented-unsupported/" target="_blank">Undocumented students at NU</a></li>
-                            </ul>
-                            <p>Check out the <a href="http://apps.northbynorthwestern.com/magazine/2015/spring/index/" target="_blank">Spring 2015 mag</a> too.</p>
-                        </div>
-                    </div>
+				<article class="sample sample_1">
+					<a class="sample_link" href="https://aditibhandari.github.io/nicar17-slides/" target="_blank">
+						<h3 class="sample_title">Self-care for Nerds</h3>
+						<img class="sample_image" src="img/selfcare.png" alt="">
+					</a>
+					<section class="sample_desc">
+						<p class="sample_text">Pitched and gave a lightning talk at <a class="sample_text_link" href="https://twitter.com/search?q=aditihbhandari%20%23NICAR17&src=typd" target="_blank">#NICAR17</a> about physical self-care as a developer, journalist, or just someone who sits at a computer all day. Here are my slides and speaker notes.</p>
+						<p class="sample_skills">HTML, CSS/Bootstrap, Photoshop</p>
+					</section>
+				</article>
+				
+				<article class="sample sample_2">
+					<a class="sample_link" href="https://learn.knightlab.com/" target="_blank">
+						<h3 class="sample_title">Learn.KnightLab</h3>
+						<img class="sample_image" src="img/knightlab.png" alt="learn dot knight lab project screenshot">
+					</a>
+					<section class="sample_desc">
+						<p class="sample_text">Wrote and designed lessons for Learn.KnightLab, a "by students, for students" project-based coding tutorial.</p>
+					</section>
+				</article>
+				
+				<article class="sample sample_3">
+					<a class="sample_link" href="https://aditibhandari.github.io/psych-314/" target="_blank">
+						<h3 class="sample_title">What Would You Buy?</h3>
+						<img class="sample_image" src="img/psych314.png" alt="what would you buy project screenshot">
+					</a>
+					<section class="sample_desc">
+						<p class="sample_text">Found a few ways I could have spent my tuition money for my data viz class.</p>
+						<p class="sample_skills">HTML, CSS, JavaScript</p>
+					</section>
+				</article>
 
-                    <div class="portfolio-item">
-                        <a href="http://aditibhandari.github.io/projects/poz-perception/stories/poz_perception/index.html" target="_blank"><img class="screenshot" src="img/flux.png"></a>
-                        <div class="description">
-                            <h4>Poz Perceptions</h4>
-                            <p><a href="http://aditibhandari.github.io/projects/poz-perception/stories/poz_perception/index.html" target="_blank">"The Flux"</a> was the central theme of the Advanced Interactive Storytelling and Design class I took last spring. My group reported on the different perceptions towards HIV/AIDS across generations of gay men using their personal narratives.</p>
-                        </div>
-                    </div>
+				<article class="sample sample_4 hidden">
+					<a class="sample_link" href="https://aditibhandari.github.io/dsgn-375/" target="_blank">
+						<h3 class="sample_title">Moving Class</h3>
+						<img class="sample_image" src="img/movingclass.jpeg" alt="moving class project screenshot">
+					</a>
+					<section class="sample_desc">
+						<p class="sample_text">Our DSGN 375: Data As Art final project. We compared Chicago public transport data and the socioeconomic distribution of the city as a 3-D data visualization.</p>
+					</section>
+				</article>
 
-                    <div class="portfolio-item">
-                        <a href="https://learn.knightlab.com/" target="_blank"><img class="screenshot" src="img/knightlab.png"></a>
-                        <div class="description">
-                            <h4>Learn.KnightLab</h4>
-                            <p>I've been working on <a href="https://learn.knightlab.com/" target="_blank">Learn.KnightLab</a> since I joined the Lab as a  student fellow this year. It's a cool way for journalism students to learn how to code hands-on through projects and tutorials.</p>
-                        </div>
-                    </div>
+			</section>
+		</section>
 
-                    <div class="portfolio-item">
-                        <a href="projects/likely-media/likelymedia.html" target="_blank"><img class="screenshot" src="img/likely-media.png"></a>
-                        <div class="description">
-                            <h4>Likely Media</h4>
-                            <p>This October, I went to a <a href="http://www.eventbrite.com/e/hack-the-gender-gap-womens-hackathon-at-usc-annenberg-tickets-18106140955" target="_blank">women's hackathon</a> at USC Annenberg, about immersive VR storytelling. My group's pitch received an honourable mention and the judges called the website I built a "cool website".</p>
-                        </div>
-                    </div>
+	</main>
 
-                </div>
-            </div>
-        </div>
-    </section>
- 
-    <section id="writing" class="work-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-                    <h3>Writing</h3>
-
-                    <div class="portfolio-item">
-                        <a href="http://www.northbynorthwestern.com/author/aditibhandari/" target="_blank"><img class="screenshot" src="img/nbn.png"></a>
-                        <div class="description">
-                            <h4>North By Northwestern</h4>
-                            <p>As a contributor and the 2015 Summer Managing Editor, I've written a guide to a <a href="http://www.northbynorthwestern.com/story/fly-me-to-the-moon/" target="_blank">lunar eclipse</a>, a <a href="http://www.northbynorthwestern.com/story/charred-the-theater-of-catharsis/" target="_blank">theatre review</a>, an <a href="http://www.northbynorthwestern.com/story/friends-classmates-remember-deceased-fifth-year-se/" target="_blank">obituary</a>, <a href="http://www.northbynorthwestern.com/story/northwestern-fifth-year-senior-dies-in-car-acciden/" target="_blank">breaking news</a> and some entertaining pieces related to <a href="http://www.northbynorthwestern.com/story/dormroom-cooking-ramen-hacks/" target="_blank">food</a> and <a href="http://www.northbynorthwestern.com/story/five-weird-ways-northwestern-students-distract-the/" target="_blank">college life</a>.</p>
-
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <a href="http://www.inournaturemag.com/?s=aditi+bhandari" target="_blank"><img class="screenshot" src="img/ion.png"></a>
-                        <div class="description">
-                            <h4>In Our Nature</h4>
-                            <p>Creating content for Northwestern's premier environmental publication has involved writing a crafts column on <a href="http://www.inournaturemag.com/category/transform-your-trash/" target="_blank">transforming your trash</a> and illustrating <a href="http://www.inournaturemag.com/nu-sex-week-we-aint-nothin-but-mammals/" target="_blank">animal mating rituals</a>. I've also <a href="http://www.inournaturemag.com/bill-nye-wants-us-to-change-the-world/" target="_blank">written about</a> (and <a href="http://www.inournaturemag.com/recap-live-tweets-from-billnye/" target="_blank">live-tweeted</a>) Bill Nye's visit to campus, and about water conservation <a href="http://www.inournaturemag.com/unicef-nu-hosts-relay-race-for-clean-water/" target="_blank">awareness efforts</a>.</p>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <a href="http://indieu.com/profile/1161-aditibhandari/154-my%20articles" target="_blank"><img class="screenshot" src="img/indieu.png"></a>
-                        <div class="description">
-                            <h4>IndieU</h4>
-                            <p>At IndieU, I had the opportunity to be the Assistant Editor and interim Editor-In-Chief of a national independent music publication. I wrote <a href="http://indieu.com/article/entry/rising-artist-cecil-john-set-to-release-highly-anticipated-mixtape" target="_blank">news articles</a>, <a href="http://indieu.com/article/entry/dillo-day-preview-check-out-the-line-up-for-indieus-second-stage-this-saturday" target="_blank">concert previews</a> and <a href="http://indieu.com/article/entry/northwestern-battle-of-the-djs-2014-meet-the-men-and-woman-behind-the-music" target="_blank">interviewed musicians</a>.</p>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <a href="http://dailynorthwestern.com/staff/?writer=Aditi%20Bhandari" target="_blank"><img class="screenshot" src="img/daily.png"></a>
-                        <div class="description">
-                            <h4>The Daily Northwestern</h4>
-                            <p><a href="http://dailynorthwestern.com/2013/11/21/thecurrent/throwback-thursday-playlist/" target="_blank">#TBT</a> to when I wanted to be a music journalist! If you like the <a href="http://dailynorthwestern.com/2014/01/28/thecurrent/relive-the-grammys-with-a-playlist-of-the-winners-and-losers/" target="_blank">Grammys</a>, <a href="http://dailynorthwestern.com/2013/12/04/holiday-guide-2013/christmas-playlist/" target="_blank">Christmas</a> or <a href="http://dailynorthwestern.com/2013/11/07/thecurrent/08-current-playlist-onlineonly-songs-to-wake-you-up/" target="_blank">songs to use as alarm tones</a>, check out these playlists I made.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="video" class="work-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-                    <h3>Video</h3>
-
-                    <div class="portfolio-item">
-                        <a href="https://www.youtube.com/watch?v=375LJrAkuvs" target="_blank"><img class="screenshot" src="img/masks.png"></a>
-                        <div class="description">
-                            <h4>Mask Making Video</h4>
-                            <p>Ever wanted to know how to make a Commedia dell'arte mask? Check out this video I made for one of my journalism classes.</p>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <a href="https://www.youtube.com/watch?v=YEanT0dL6kk" target="_blank"><img class="screenshot" src="img/jones.png"></a>
-                        <div class="description">
-                            <h4>Welcome to Jones</h4>
-                            <p>In the spring of 2014, the Jones Fine and Performing Arts Residential College was preparing for its new residents. I created this video to welcome them to their new home.</p>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <a href="https://www.youtube.com/watch?v=728QYAsCYKA" target="_blank"><img class="screenshot" src="img/rcb-sports.png"></a>
-                        <div class="description">
-                            <h4>RCB Field Day</h4>
-                            <p>The Residential College Board held a Field Day event in the spring of 2014 and held a competition between the 11 participating dorms. This is the trailer I made for Jones Residential College, which won the competition and earned us 50 points.</p>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <a href="http://indieu.com/component/easyblog/entry/nudm-battle-of-the-djs-winner-rucku5-talks-dance-marathon-performance-and-wishlist-collabs?Itemid=833" target="_blank"><img class="screenshot" src="img/ruckus.png"></a>
-                        <div class="description">
-                            <h4>IndieU</h4>
-                            <p>I started building up IndieU's multimedia presence by creating a video interview with DJ Rucku5. Rucku5 was the winner of the NU Dance Marathon Battle of the DJs.</p>
-                        </div>
-                    </div>
-
-<!--                    <div class="portfolio-item">
-                        <img class="screenshot" src="img/screenshot.png">
-                        <div class="description">
-                            <h4>Deeva Dance Troupe</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
-                        </div>
-                    </div> -->
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="audio" class="work-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-                    <h3>Audio</h3>
-
-                    <div class="portfolio-item">
-                        <a href="https://soundcloud.com/aditi-bhandari-6/native-american-narratives-301-final-project-audio-story/s-33Gm4" target="_blank"><img class="screenshot" src="img/native-american-narratives.png"></a>
-                        <div class="description">
-                            <h4>Native American Narratives</h4>
-                            <p>I took a journalism class on Enterprise Reporting in Diverse Communities and produced this audio clip as part of a larger series on Native American Narratives in Chicago. Listen to what is means to grow up as a Native American in Chicago.</p>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <a href="http://www.inournaturemag.com/the-art-of-protest-students-celebrate-justice-through-song/" target="_blank"><img class="screenshot" src="img/ion-audio.png"></a>
-                        <div class="description">
-                            <h4>The Art of Protest</h4>
-                            <p>This story combines two of my favourite things; music and environmental activism. I created this audio story for In Our Nature Magazine following a performance event of protest music from the last 100 years.</p>
-                        </div>
-                    </div>
-
-<!--                    <div class="portfolio-item">
-                        <img class="screenshot" src="img/screenshot.png">
-                        <div class="description">
-                            <h4>Tonik Tap</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="portfolio-item">
-                        <img class="screenshot" src="img/screenshot.png">
-                        <div class="description">
-                        <h4>Brown Sugar</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
-                        </div>
-                    </div> -->
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="work-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-                    <h3>Projects</h3>
-
-                   <div class="portfolio-item">
-                        <a href="http://slides.com/dittybhandari/deck-7/fullscreen#/" target="_blank"><img class="screenshot" src="img/mirrormirror.png"></a>
-                        <div class="description">
-                            <h4>SNDMakesCHI; Mirror, Mirror</h4>
-                            <p>At the SNDMakesCHI invitational based on creating communities around games and journalism, my team prototyped a game called Mirror, Mirror. You're assigned an anonymous character and must navigate social situations, using contextual clues to eventually guess your identity, thus revealing you own unknown biases.</p>
-                        </div>
-                    </div>
-
-                   <div class="portfolio-item">
-                        <a href="http://aditibhandari.github.io/projects/psych314/index.html" target="_blank"><img class="screenshot" src="img/psych314.png"></a>
-                        <div class="description">
-                            <h4>What else can you get for a year's college tuition?</h4>
-                            <p>For my Psychology class on presenting data and ideas, we had to take some data and plot it concretely (e.g. bar chart) and abstractly (like this randomizer). Click through to see some of the crazy things you could get for $64,018.</p>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <img class="screenshot" src="img/jones-brand.png">
-                        <div class="description">
-                            <h4>Brand Building: Jones Residential College</h4>
-                            <p>When I was elected the Historian of my dorm in Spring 2015, I decided to revamp our <a href="http://jonesrc.weebly.com/" target="_blank">website</a> and create a social media presence on <a href="https://twitter.com/MamaJones_NU" target="_blank">Twitter</a> and <a href="http://jonesrc.tumblr.com/" target="_blank">Tumblr</a> that residents could follow for updates and media. The website I designed won awards for Best Website and Most Improved Website from the Residential College Board, and the social media pages are now run by the current Historian.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="talks" class="work-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-                    <h3>Talks</h3>
-
-                    <div class="portfolio-item">
-                        <a href="http://slides.com/dittybhandari/deck-8/fullscreen" target="_blank"><img class="screenshot" src="img/designprocess.png">
-                        <div class="description"></a>
-                            <h4>Design Thinking IRL</h4>
-                            <p>The design process sometimes seems like a drag, but it can help you save time and create a well-developed project! And here's the kicker; you're probably already following the process in your daily life.</p>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <a href="http://slides.com/dittybhandari/learn/fullscreen" target="_blank"><img class="screenshot" src="img/journalismcoding.png">
-                        <div class="description"></a>
-                            <h4>Why Journalists Should Learn How to Code</h4>
-                            <p>My friend <a href="https://twitter.com/euniceyounglee" target="_blank">Eunice</a> and I gave a talk to a freshman multimedia reporting class about why they should learn how to code, using <a href="https://learn.knightlab.com/" target="_blank">Learn.KnightLab</a>, the tutorial website I worked on.</p>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <a href="http://slides.com/dittybhandari/sublime-hacks/fullscreen#/" target="_blank"><img class="screenshot" src="img/sublime-hacks.png">
-                        <div class="description"></a>
-                            <h4>Sublime Hacks</h4>
-                            <p>I've been using Sublime Text for about a year now. Here's some tricks and tricks I've accumulated over time to make my coding more efficient (and hopefully yours too)!</p>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <a href="http://slides.com/dittybhandari/deck-1/fullscreen" target="_blank"><img class="screenshot" src="img/vr-journalism.png">
-                        <div class="description"></a>
-                            <h4>The Future of JoVRnalism</h4>
-                            <p>In October 2015, I attended a hackathon on immersive VR journalism. Here's a talk I gave one week later with my friend <a href="https://twitter.com/euniceyounglee" target="_blank">Eunice</a> about what we took away from a weekend of learning about VR.</p>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <a href="http://slides.com/dittybhandari/deck-2/fullscreen" target="_blank"><img class="screenshot" src="img/ruby-neutrino.png"></a>
-                        <div class="description">
-                            <h4>Ruby Neutrino Project Pitch</h4>
-                            <p>I attended the very first <a href="https://shehackschi.splashthat.com/" target="_blank">She Hacks Chi</a> hackathon dedicated to closing the gender gap in STEM fields. My group pitched "Finding Ruby Neutrino," a quest-based computer game with challenges inspired by various STEM fields.</p>
-                        </div>
-                    </div>
-
-<!--                    <div class="portfolio-item">
-                        <img class="screenshot" src="img/gifs-pres.png">
-                        <div class="description">
-                            <h4>GIFs in a Jiffy</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
-                        </div>
-                    </div> -->
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section-part">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
-                    <h2>Contact</h2>
-                    <div>
-                        <a href="mailto:aditibhandari2017@u.northwestern.edu" target="_blank"><img class="logo" src="img/logo-mail.png"></a>
-
-                        <a href="https://twitter.com/AditiHBhandari" target="_blank"><img class="logo" src="img/logo-twitter.png"></a>
-
-                        <a href="https://www.linkedin.com/in/aditihbhandari" target="_blank"><img class="logo" src="img/logo-linkedin.png"></a>
-
-                        <a href="https://github.com/AditiBhandari" target="_blank"><img class="logo" src="img/logo-github.png"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-        <p>Design and Development: Aditi Bhandari (2015)<br>Icons courtesy of The Noun Project (Gao and Maria Maldonado), LinkedIn and GitHub</p>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
+	<footer class="footer">
+		<p class="footer_text">Designed and developed by Aditi Bhandari</p>
+	</footer>
 
 </body>
 
