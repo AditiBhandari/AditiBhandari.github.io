@@ -46,14 +46,14 @@ html, body {
 }
 
 .menu_link {
-	font-size: 1.2em;
-	color: #888;
+	font-size: 1.5em;
+	color: #737373;
 }
 
 .menu_link, .menu_home_link {
 	font-family: 'Biryani', sans-serif;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 300;
 	text-decoration: none;
 	padding: 5px 0px 0px 0px;
 }
@@ -102,7 +102,7 @@ html, body {
 	font-size: 1.5em;
 	font-family: 'Biryani', sans-serif;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 300;
 	display: inline-block;
 }
 
@@ -110,8 +110,10 @@ html, body {
 	display: inline-block;
 	padding-bottom: 3px;
 	font-size: 0.9em;
-	color: #888;
+	color: #737373;
 	text-decoration: none;
+	border-bottom: solid 4px #fff;
+	transition: border-bottom ease-in-out 0.1s;
 }
 
 .section_more_link:after {
@@ -149,18 +151,20 @@ html, body {
 	color: #191919;
 }
 
-.sample_link:hover .sample_title_border { border-bottom: solid 4px #227f7f; }
+.sample_link:hover .sample_title_border, .section_more_link:hover {
+	border-bottom: solid 4px #227f7f; 
+}
 
-.sample_link:hover .sample_image { opacity: 1; }
+.sample_link:hover .sample_image { opacity: 0.7; }
 
 .sample_title {
 	margin: 0 0 5px 0;
 	text-transform: uppercase;
-	font-family: 'Biryani', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 0.9em;
-	color: #888;
+	color: #737373;
 }
 
 .sample_title_border {
@@ -173,10 +177,9 @@ figure { margin: 0; }
 .sample_image {
 	width: 100%;
 	margin: 0;
-	opacity: 0.8;
+	padding-top: 4px;
+	opacity: 1;
 	position: relative;
-	box-shadow: 0px 2px 5px #b0b0b0;
-	-webkit-backface-visibility: hidden;
 	transition: opacity ease-in-out 0.1s;
 }
 
@@ -203,10 +206,10 @@ figure { margin: 0; }
 .sample_skills {
 	font-size: 0.8em;
 	margin: 3px 0 0 0;
-	color: #888;
+	color: #737373;
 	font-weight: 400;
 	font-family: 'Open Sans', sans-serif;
-ß}
+}
 
 .hidden { display: none; }
 
@@ -224,7 +227,7 @@ figure { margin: 0; }
 .logo_img:hover {
     border-bottom: 2px solid #227f7f;
     max-width: 100%;
-    opacity: 1;
+    opacity: 0.7;
 }
 
 .sample_file { display: initial; }
@@ -245,7 +248,7 @@ figure { margin: 0; }
 .footer_text {
 	text-align: center;
 	font-size: 0.8em;
-	color: #888;
+	color: #737373;
 }
 
 /* MEDIA QUERIES */
