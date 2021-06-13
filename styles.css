@@ -214,8 +214,10 @@ figure { margin: 0; }
 .hidden { display: none; }
 
 .logo_link {
-	padding:12px;
+	padding: 12px;
 	text-decoration: none;
+	border-bottom: solid 2px #fff;
+	transition: border-bottom ease-in-out 0.1s;
 }
 
 .fab {
@@ -224,7 +226,13 @@ figure { margin: 0; }
 	transition: color ease-in-out 0.1s;
 }
 
-.fab:hover { color: #227f7f; }
+.logo_link:hover > .fab, .fab:hover {
+	color: #227f7f;
+	border-bottom: solid 2px #227f7f;
+	transition: border-bottom ease-in-out 0.1s;
+}
+
+
 
 .sample_file { display: initial; }
 
