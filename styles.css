@@ -216,9 +216,10 @@ figure { margin: 0; }
 	color: #737373;
 	font-weight: 400;
 	font-family: 'Open Sans', sans-serif;
+	display: none;
 }
 
-.hidden { display: none; }
+.hidden, .print_graphics { display: none; }
 
 
 
@@ -254,7 +255,7 @@ figure { margin: 0; }
     .hidden { display: none; }
 }
 
-@media only screen and (max-width: 915px) {
+@media only screen and (max-width: 930px) {
     .section_samples { margin: 40px 0px 0px 0px; }
 
     .sample {
